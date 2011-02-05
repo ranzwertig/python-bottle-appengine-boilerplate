@@ -1,0 +1,1 @@
+development = {    'mode'  :   'development'    }    testing = {    'mode'  :   'testing'}    production = {    'mode'  :   'production'    }

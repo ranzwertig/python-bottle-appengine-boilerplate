@@ -1,0 +1,1 @@
+from lib import bottlefrom google.appengine.api import usersdef private(func):    def wrapper(*args, **kwargs):        user = users.get_current_user()        if (user):            return func(*args, **kwargs)        else:            bottle.redirect(users.create_login_url(bottle.request.url))    return wrapper

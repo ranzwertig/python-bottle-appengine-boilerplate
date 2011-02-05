@@ -1,0 +1,1 @@
+from lib import *def init_hooks(app=None):    if not app:        app = bottle.default_app()    @app.hook('before_request')    def before_hook():        pass

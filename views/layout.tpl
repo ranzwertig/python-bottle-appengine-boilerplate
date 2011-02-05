@@ -1,0 +1,1 @@
+<!doctype html><html><head>  <title>{{title or 'None'}}</title></head><body>  %include</body></html>
