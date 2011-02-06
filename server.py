@@ -5,14 +5,13 @@ from google.appengine.ext import db
 from google.appengine.api import users
 
 from plugins import hooks
-from controllers import index, assets, error
+from controllers import index, error
 from config import config
 
 app = bottle.Bottle(config=config.production)
 
 #set controller routes
 index.initRoutes(app)
-assets.initRoutes(app)
 error.initRoutes(app)
 
 # init plugins
